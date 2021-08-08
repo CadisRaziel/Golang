@@ -41,3 +41,15 @@ func main() {
 Quando acessarmos um package em Go e virmos a seguinte situação '...intercafe{}'
 os ... quer dizer que a função aceita quantos parametros quiser
 se chama função variatica(trabalha com qualquer numeros de argumentos)
+
+
+
+//===================================================================================================================================
+
+*** variaveis ***
+
+x := 10 -> inteiros
+y := "Vitor"-> string
+z := true -> bool
+
+//repare que para atribuir variaveis colocamos :=
