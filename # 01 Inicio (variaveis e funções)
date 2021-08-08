@@ -1,0 +1,43 @@
+func main() {
+//aqui começa
+	fmt.Println("Hello, World")
+//aqui termina
+
+//a função main é a porta de entrada e porta de saida em qualquer programa que escrevermos em 'go'
+}
+
+//===================================================================================================================================
+
+
+//repare que é bem parecido com o dart, ele necessita da função main
+func main() {
+	fmt.Println("Hello, World", "oi", "tudo bem", 100)
+  //repare que podemos colocar varias string sem precisar concatenar e podemos colocar inteiros diretamente sem transformar em string
+  
+  fmt.Println("Hello, World","oi","tudo bem",100)
+  //repare tambem que nao precisamos por espaço, pois o package 'fmt' ja faz isso automaticamente
+}
+
+
+//===================================================================================================================================
+
+
+
+func main() {
+
+	numerodebytes,erros := fmt.Println("Hello,World",45,"oi")
+  //em go quando utilizamos uma variavel e não usamos ela, o programa da erro, pois ele não deixa a execução sabendo que tem uma variavel que nao ta sendo utilizada
+  //para podermos fazer essa operação acima e não utilizar o 'numerodebytes' colocamos um '_' com isso o go entende que é lixo, vai executar a função e descartar o '_'
+  
+  numerodebytes,erros := fmt.Println("Hello,World",45,"oi")
+  fmt.Println(numerodebytes, erros)
+  //aqui ele vai mostrar o numero de bytes dessa função e os erros
+  
+  ** <nil> -> não existem erros **
+}
+
+//===================================================================================================================================
+
+Quando acessarmos um package em Go e virmos a seguinte situação '...intercafe{}'
+os ... quer dizer que a função aceita quantos parametros quiser
+se chama função variatica(trabalha com qualquer numeros de argumentos)
